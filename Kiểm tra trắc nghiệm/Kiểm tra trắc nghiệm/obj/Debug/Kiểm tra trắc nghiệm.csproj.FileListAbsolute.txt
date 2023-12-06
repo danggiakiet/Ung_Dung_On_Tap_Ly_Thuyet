@@ -1,0 +1,18 @@
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.AssemblyReference.cache
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.SuggestedBindingRedirects.cache
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.ResolveComReference.cache
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.Form1.resources
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormChuong.resources
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.Properties.Resources.resources
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.GenerateResource.cache
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.CoreCompileInputs.cache
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\Kiểm tra trắc nghiệm.exe.config
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\Kiểm tra trắc nghiệm.exe
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\Kiểm tra trắc nghiệm.pdb
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\EPPlus.dll
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\EPPlus.xml
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormDe.resources
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.CopyComplete
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.exe
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.pdb
+D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormNopBai.resources
