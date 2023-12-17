@@ -72,6 +72,12 @@
     <Compile Include="FormDe.Designer.cs">
       <DependentUpon>FormDe.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMonHoc.Designer.cs">
+      <DependentUpon>FormMonHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormNopBai.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormDe.resx">
       <DependentUpon>FormDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMonHoc.resx">
+      <DependentUpon>FormMonHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormNopBai.resx">
       <DependentUpon>FormNopBai.cs</DependentUpon>

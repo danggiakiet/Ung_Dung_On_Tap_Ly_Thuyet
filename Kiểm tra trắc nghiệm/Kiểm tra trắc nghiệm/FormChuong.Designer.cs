@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelTenMonHoc = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -37,15 +37,15 @@
             this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // labelTenMonHoc
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(210, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(387, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "PHÁP LUẬT ĐẠI CƯƠNG";
+            this.labelTenMonHoc.AutoSize = true;
+            this.labelTenMonHoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTenMonHoc.Location = new System.Drawing.Point(210, 26);
+            this.labelTenMonHoc.Name = "labelTenMonHoc";
+            this.labelTenMonHoc.Size = new System.Drawing.Size(387, 37);
+            this.labelTenMonHoc.TabIndex = 0;
+            this.labelTenMonHoc.Text = "PHÁP LUẬT ĐẠI CƯƠNG";
             // 
             // button1
             // 
@@ -124,7 +124,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelTenMonHoc);
             this.Name = "FormChuong";
             this.Text = "FormChuong";
             this.ResumeLayout(false);
@@ -134,7 +134,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelTenMonHoc;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

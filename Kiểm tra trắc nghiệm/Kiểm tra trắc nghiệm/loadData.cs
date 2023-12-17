@@ -12,14 +12,14 @@ namespace Kiểm_tra_trắc_nghiệm
     public class loadData
     {
         public loadData() { }
-        public void LoadDataFromExcel(List<cauHoi> dsCauHoi, string chuong)
+        public void LoadDataFromExcel(List<cauHoi> dsCauHoi, string monHoc, string chuong)
         {
             // Làm mới danh sách
             dsCauHoi.Clear();
             try
             {
                 // Mở file excel
-                using (var package = new ExcelPackage(new FileInfo($"data/{chuong}.xlsx")))
+                using (var package = new ExcelPackage(new FileInfo($"data/{monHoc}/{chuong}.xlsx")))
                 {
                     ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
                     // Cho duyệt từ dòng 3 đến hết

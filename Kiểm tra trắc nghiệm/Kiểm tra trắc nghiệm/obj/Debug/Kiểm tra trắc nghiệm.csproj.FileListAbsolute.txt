@@ -16,3 +16,22 @@ D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra tr
 D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.exe
 D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.pdb
 D:\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormNopBai.resources
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\Kiểm tra trắc nghiệm.exe.config
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\Kiểm tra trắc nghiệm.exe
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\Kiểm tra trắc nghiệm.pdb
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\EPPlus.dll
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\EPPlus.xml
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.AssemblyReference.cache
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.SuggestedBindingRedirects.cache
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.ResolveComReference.cache
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.Form1.resources
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormChuong.resources
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormDe.resources
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormMonHoc.resources
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormNopBai.resources
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.Properties.Resources.resources
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.GenerateResource.cache
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.CoreCompileInputs.cache
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.CopyComplete
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.exe
+D:\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.pdb

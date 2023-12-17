@@ -16,7 +16,7 @@ namespace Kiểm_tra_trắc_nghiệm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormChuong());
+            Application.Run(new FormMonHoc());
         }
     }
 }

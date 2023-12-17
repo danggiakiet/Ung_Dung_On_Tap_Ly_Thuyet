@@ -54,11 +54,11 @@ namespace Kiểm_tra_trắc_nghiệm
                 list[n] = temp;
             }
         }
-        public Form1(string Chuong, int De)
+        public Form1(string monHoc,string Chuong, int De)
         {
             InitializeComponent();
             chuong = Chuong;
-            loadData.LoadDataFromExcel(dsCauHoi ,chuong);
+            loadData.LoadDataFromExcel(dsCauHoi , monHoc, chuong);
             // Lọc danh sách câu hỏi theo "De"
             dsCauHoiCuaDe = GetQuestionsForDe(dsCauHoi, De);
             Shuffle(dsCauHoiCuaDe);

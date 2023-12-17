@@ -16,7 +16,7 @@ namespace Kiểm_tra_trắc_nghiệm
     public partial class FormDe : Form
     {
         List<cauHoi> dsCauHoi = new List<cauHoi>();
-        string chuong;
+        string monHoc, chuong;
         loadData loadData = new loadData();
         private void FormDe_Load(object sender, EventArgs e)
         {
@@ -27,7 +27,7 @@ namespace Kiểm_tra_trắc_nghiệm
             button5.Visible = false;
             button6.Visible = false;
             labelChuong.Text = chuong;
-            loadData.LoadDataFromExcel(dsCauHoi, chuong);
+            loadData.LoadDataFromExcel(dsCauHoi, monHoc, chuong);
             int soDe = dsCauHoi.Count / 20;
             if(dsCauHoi.Count % 20 > 0)
             {
@@ -39,8 +39,9 @@ namespace Kiểm_tra_trắc_nghiệm
                 Controls[buttonName].Visible = true;
             }
         }
-        public FormDe(string Chuong)
+        public FormDe(string MonHoc ,string Chuong)
         {
+            monHoc = MonHoc;
             chuong = Chuong;
             InitializeComponent();
         }
@@ -52,37 +53,37 @@ namespace Kiểm_tra_trắc_nghiệm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form1De1 = new Form1(chuong, 1);
+            Form1 form1De1 = new Form1(monHoc, chuong, 1);
             form1De1.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 form1De2 = new Form1(chuong, 2);
+            Form1 form1De2 = new Form1(monHoc, chuong, 2);
             form1De2.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form1 form1De3 = new Form1(chuong, 3);
+            Form1 form1De3 = new Form1(monHoc, chuong, 3);
             form1De3.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form1 form1De4 = new Form1(chuong, 4);
+            Form1 form1De4 = new Form1(monHoc, chuong, 4);
             form1De4.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form1 form1De5 = new Form1(chuong, 5);
+            Form1 form1De5 = new Form1(monHoc, chuong, 5);
             form1De5.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form1 form1De6 = new Form1(chuong, 6);
+            Form1 form1De6 = new Form1(monHoc, chuong, 6);
             form1De6.ShowDialog();
         }
     }
