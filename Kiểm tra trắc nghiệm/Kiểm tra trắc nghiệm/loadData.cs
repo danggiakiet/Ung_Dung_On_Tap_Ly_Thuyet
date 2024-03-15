@@ -32,7 +32,7 @@ namespace Kiểm_tra_trắc_nghiệm
                         string cauC = Convert.ToString(worksheet.Cells[i, 5].Value ?? "");
                         string cauD = Convert.ToString(worksheet.Cells[i, 6].Value ?? "");
                         int dapAnDung = Convert.ToInt32(worksheet.Cells[i, 7].Value ?? "");
-                        // Tạo biến nguyenLieu để thêm vào dsNhanVien
+                        // Tạo biến cauHoi để thêm vào dsCauHoi
                         cauHoi cauHoii = new cauHoi(cauHoi, cauA, cauB, cauC, cauD, dapAnDung);
                         // Thêm biến vừa tạo vào dsNhanVien
                         dsCauHoi.Add(cauHoii);
