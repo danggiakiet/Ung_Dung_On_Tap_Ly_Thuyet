@@ -42,6 +42,14 @@ namespace Kiểm_tra_trắc_nghiệm
             labelSoCauDung.Text = $"Số câu đúng: {count} / {dsCauHoiCuaDe.Count}";
 
         }
+        public void Form_CauSai(List<cauHoi> dsCauSai)
+        {
+            labelChuong.Text = "Câu Sai";
+            labelSoCauDung.Visible = false;
+            labelSoCauHoi.Visible = false;
+            bttNopBai.Visible = false;
+
+        }
         private void Shuffle(List<cauHoi> list)
         {
             int n = list.Count;
@@ -273,7 +281,7 @@ namespace Kiểm_tra_trắc_nghiệm
 
         private void bttNopBai_Click(object sender, EventArgs e)
         {
-            FormNopBai formNopBai = new FormNopBai(count,dsCauSai.Count, dsCauSai);
+            FormNopBai formNopBai = new FormNopBai(count,dsCauSai.Count, dsCauSai, dsCauHoiCuaDe);
             formNopBai.ShowDialog();
         }
     }

@@ -31,8 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.labelDiem = new System.Windows.Forms.Label();
             this.labelSoCauSai = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtCauHoi = new System.Windows.Forms.RichTextBox();
+            this.txtCauTraLoi = new System.Windows.Forms.RichTextBox();
+            this.bttLui = new System.Windows.Forms.Button();
+            this.bttTien = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -66,28 +68,57 @@
             this.labelSoCauSai.TabIndex = 2;
             this.labelSoCauSai.Text = "labelSoCauSai";
             // 
-            // dataGridView1
+            // txtCauHoi
             // 
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkGray;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 163);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 40;
-            this.dataGridView1.RowTemplate.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.Size = new System.Drawing.Size(562, 326);
-            this.dataGridView1.TabIndex = 3;
+            this.txtCauHoi.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCauHoi.Location = new System.Drawing.Point(14, 158);
+            this.txtCauHoi.Name = "txtCauHoi";
+            this.txtCauHoi.ReadOnly = true;
+            this.txtCauHoi.Size = new System.Drawing.Size(560, 169);
+            this.txtCauHoi.TabIndex = 3;
+            this.txtCauHoi.Text = "";
+            // 
+            // txtCauTraLoi
+            // 
+            this.txtCauTraLoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCauTraLoi.Location = new System.Drawing.Point(14, 333);
+            this.txtCauTraLoi.Name = "txtCauTraLoi";
+            this.txtCauTraLoi.ReadOnly = true;
+            this.txtCauTraLoi.Size = new System.Drawing.Size(560, 97);
+            this.txtCauTraLoi.TabIndex = 4;
+            this.txtCauTraLoi.Text = "";
+            // 
+            // bttLui
+            // 
+            this.bttLui.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttLui.Location = new System.Drawing.Point(195, 447);
+            this.bttLui.Name = "bttLui";
+            this.bttLui.Size = new System.Drawing.Size(76, 35);
+            this.bttLui.TabIndex = 5;
+            this.bttLui.Text = "<";
+            this.bttLui.UseVisualStyleBackColor = true;
+            this.bttLui.Click += new System.EventHandler(this.bttLui_Click);
+            // 
+            // bttTien
+            // 
+            this.bttTien.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttTien.Location = new System.Drawing.Point(290, 447);
+            this.bttTien.Name = "bttTien";
+            this.bttTien.Size = new System.Drawing.Size(76, 35);
+            this.bttTien.TabIndex = 6;
+            this.bttTien.Text = ">";
+            this.bttTien.UseVisualStyleBackColor = true;
+            this.bttTien.Click += new System.EventHandler(this.bttTien_Click);
             // 
             // FormNopBai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(586, 501);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.bttTien);
+            this.Controls.Add(this.bttLui);
+            this.Controls.Add(this.txtCauTraLoi);
+            this.Controls.Add(this.txtCauHoi);
             this.Controls.Add(this.labelSoCauSai);
             this.Controls.Add(this.labelDiem);
             this.Controls.Add(this.label1);
@@ -95,7 +126,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormNopBai";
             this.Load += new System.EventHandler(this.FormNopBai_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,6 +136,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label labelDiem;
         private System.Windows.Forms.Label labelSoCauSai;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.RichTextBox txtCauHoi;
+        private System.Windows.Forms.RichTextBox txtCauTraLoi;
+        private System.Windows.Forms.Button bttLui;
+        private System.Windows.Forms.Button bttTien;
     }
 }

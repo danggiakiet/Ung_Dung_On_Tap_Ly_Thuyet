@@ -44,7 +44,8 @@ namespace Kiểm_tra_trắc_nghiệm
             {
                 // Thông báo lỗi
                 MessageBox.Show("Lỗi khi đọc dữ liệu từ Excel: " + ex.Message, "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;            }
+                return;           
+            }
         }
     }
 }
