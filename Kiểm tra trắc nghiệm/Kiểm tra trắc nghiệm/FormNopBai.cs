@@ -88,6 +88,7 @@ namespace Kiểm_tra_trắc_nghiệm
             else
             {
                 bttLui.Visible = true;
+                bttTien.Visible = true;
             }
         }
 
@@ -102,6 +103,7 @@ namespace Kiểm_tra_trắc_nghiệm
             }
             else
             {
+                bttLui.Visible = true;
                 bttTien.Visible = true;
             }
         }

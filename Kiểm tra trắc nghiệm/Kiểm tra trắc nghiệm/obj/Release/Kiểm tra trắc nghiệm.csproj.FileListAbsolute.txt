@@ -1,0 +1,18 @@
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Release\Kiểm tra trắc nghiệm.exe.config
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Release\Kiểm tra trắc nghiệm.exe
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Release\Kiểm tra trắc nghiệm.pdb
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Release\EPPlus.dll
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Release\EPPlus.xml
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Release\Kiểm tra trắc nghiệm.csproj.AssemblyReference.cache
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Release\Kiểm tra trắc nghiệm.csproj.ResolveComReference.cache
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Release\Kiểm_tra_trắc_nghiệm.Form1.resources
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Release\Kiểm_tra_trắc_nghiệm.FormChuong.resources
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Release\Kiểm_tra_trắc_nghiệm.FormDe.resources
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Release\Kiểm_tra_trắc_nghiệm.FormMonHoc.resources
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Release\Kiểm_tra_trắc_nghiệm.FormNopBai.resources
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Release\Kiểm_tra_trắc_nghiệm.Properties.Resources.resources
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Release\Kiểm tra trắc nghiệm.csproj.GenerateResource.cache
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Release\Kiểm tra trắc nghiệm.csproj.CoreCompileInputs.cache
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Release\Kiểm tra.68A06BD2.Up2Date
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Release\Kiểm tra trắc nghiệm.exe
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Release\Kiểm tra trắc nghiệm.pdb

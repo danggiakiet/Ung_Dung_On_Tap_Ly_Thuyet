@@ -35,6 +35,7 @@ namespace Kiểm_tra_trắc_nghiệm
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            ShuffleAnswers(dsCauHoiCuaDe); // Trộn ngẫu nhiên thứ tự câu trả lời
             bttLui.Visible = false;
             bttNopBai.Visible = false;
             labelChuong.Text = chuong;
@@ -177,50 +178,53 @@ namespace Kiểm_tra_trắc_nghiệm
             LoadCauHoi(dsCauHoiCuaDe, index);
         }
 
-        private void ShuffleAnswers(List<cauHoi> dsCauHoiCuaDe, cauHoi cauHoi)
+        private void ShuffleAnswers(List<cauHoi> dsCauHoiCuaDe)
         {
-            string dapAnDungBanDau = "";
-            switch (cauHoi.dapAnDung)
+            foreach(cauHoi ch in dsCauHoiCuaDe)
             {
-                case 1:
-                    dapAnDungBanDau = cauHoi.cauA;
-                    break;
-                case 2:
-                    dapAnDungBanDau = cauHoi.cauB;
-                    break;
-                case 3:
-                    dapAnDungBanDau = cauHoi.cauC;
-                    break;
-                case 4:
-                    dapAnDungBanDau = cauHoi.cauD;
-                    break;
-            }
+                string dapAnDungBanDau = "";
+                switch (ch.dapAnDung)
+                {
+                    case 1:
+                        dapAnDungBanDau = ch.cauA;
+                        break;
+                    case 2:
+                        dapAnDungBanDau = ch.cauB;
+                        break;
+                    case 3:
+                        dapAnDungBanDau = ch.cauC;
+                        break;
+                    case 4:
+                        dapAnDungBanDau = ch.cauD;
+                        break;
+                }
 
-            List<string> answers = new List<string> { cauHoi.cauA, cauHoi.cauB, cauHoi.cauC, cauHoi.cauD };
-            answers = answers.OrderBy(a => Guid.NewGuid()).ToList(); // Sử dụng Guid.NewGuid() để trộn ngẫu nhiên
+                List<string> answers = new List<string> { ch.cauA, ch.cauB, ch.cauC, ch.cauD };
+                answers = answers.OrderBy(a => Guid.NewGuid()).ToList(); // Sử dụng Guid.NewGuid() để trộn ngẫu nhiên
 
 
-            // Gán lại câu trả lời theo thứ tự mới
-            cauHoi.cauA = answers[0];
-            cauHoi.cauB = answers[1];
-            cauHoi.cauC = answers[2];
-            cauHoi.cauD = answers[3];
+                // Gán lại câu trả lời theo thứ tự mới
+                ch.cauA = answers[0];
+                ch.cauB = answers[1];
+                ch.cauC = answers[2];
+                ch.cauD = answers[3];
 
-            if(cauHoi.cauA == dapAnDungBanDau)
-            {
-                cauHoi.dapAnDung = 1;
-            }
-            if (cauHoi.cauB == dapAnDungBanDau)
-            {
-                cauHoi.dapAnDung = 2;
-            }
-            if (cauHoi.cauC == dapAnDungBanDau)
-            {
-                cauHoi.dapAnDung = 3;
-            }
-            if (cauHoi.cauD == dapAnDungBanDau)
-            {
-                cauHoi.dapAnDung = 4;
+                if (ch.cauA == dapAnDungBanDau)
+                {
+                    ch.dapAnDung = 1;
+                }
+                if (ch.cauB == dapAnDungBanDau)
+                {
+                    ch.dapAnDung = 2;
+                }
+                if (ch.cauC == dapAnDungBanDau)
+                {
+                    ch.dapAnDung = 3;
+                }
+                if (ch.cauD == dapAnDungBanDau)
+                {
+                    ch.dapAnDung = 4;
+                }
             }
 
         }
@@ -228,20 +232,12 @@ namespace Kiểm_tra_trắc_nghiệm
 
         private void LoadCauHoi(List<cauHoi> dsCauHoi, int index)
         {
-            //labelSoCauHoi.Text = $"Câu hỏi: {index + 1} / {dsCauHoiCuaDe.Count}";
-            //richTextBoxCauHoi.Text = dsCauHoiCuaDe[index].CauHoi;
-            //bttCauA.Text = dsCauHoiCuaDe[index].cauA;
-            //bttCauB.Text = dsCauHoiCuaDe[index].cauB;
-            //bttCauC.Text = dsCauHoiCuaDe[index].cauC;
-            //bttCauD.Text = dsCauHoiCuaDe[index].cauD;
             labelSoCauHoi.Text = $"Câu hỏi: {index + 1} / {dsCauHoiCuaDe.Count}";
-            cauHoi cauHoiHienTai = dsCauHoiCuaDe[index];
-            ShuffleAnswers(dsCauHoiCuaDe, cauHoiHienTai); // Trộn ngẫu nhiên thứ tự câu trả lời
-            richTextBoxCauHoi.Text = cauHoiHienTai.CauHoi;
-            bttCauA.Text = cauHoiHienTai.cauA;
-            bttCauB.Text = cauHoiHienTai.cauB;
-            bttCauC.Text = cauHoiHienTai.cauC;
-            bttCauD.Text = cauHoiHienTai.cauD;
+            richTextBoxCauHoi.Text = dsCauHoiCuaDe[index].CauHoi;
+            bttCauA.Text = dsCauHoiCuaDe[index].cauA;
+            bttCauB.Text = dsCauHoiCuaDe[index].cauB;
+            bttCauC.Text = dsCauHoiCuaDe[index].cauC;
+            bttCauD.Text = dsCauHoiCuaDe[index].cauD;
         }
 
         private void bttCauA_Click(object sender, EventArgs e)
