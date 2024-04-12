@@ -30,6 +30,7 @@
         {
             this.labelTenMonHoc = new System.Windows.Forms.Label();
             this.panelChuong = new System.Windows.Forms.Panel();
+            this.bttback = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelTenMonHoc
@@ -51,15 +52,29 @@
             this.panelChuong.Size = new System.Drawing.Size(747, 208);
             this.panelChuong.TabIndex = 7;
             // 
+            // bttback
+            // 
+            this.bttback.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttback.Location = new System.Drawing.Point(677, 12);
+            this.bttback.Name = "bttback";
+            this.bttback.Size = new System.Drawing.Size(111, 39);
+            this.bttback.TabIndex = 15;
+            this.bttback.Text = "Quay lại";
+            this.bttback.UseVisualStyleBackColor = true;
+            this.bttback.Click += new System.EventHandler(this.bttback_Click);
+            // 
             // FormChuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 297);
+            this.Controls.Add(this.bttback);
             this.Controls.Add(this.panelChuong);
             this.Controls.Add(this.labelTenMonHoc);
             this.Name = "FormChuong";
-            this.Text = "FormChuong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Chọn chương";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormChuong_FormClosing);
             this.Load += new System.EventHandler(this.FormChuong_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -70,5 +85,6 @@
 
         private System.Windows.Forms.Label labelTenMonHoc;
         private System.Windows.Forms.Panel panelChuong;
+        private System.Windows.Forms.Button bttback;
     }
 }

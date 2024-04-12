@@ -124,7 +124,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormNopBai";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormNopBai";
+            this.Text = "Nộp bài";
             this.Load += new System.EventHandler(this.FormNopBai_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

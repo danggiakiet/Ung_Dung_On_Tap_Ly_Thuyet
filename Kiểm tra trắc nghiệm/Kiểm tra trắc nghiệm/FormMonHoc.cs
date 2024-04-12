@@ -61,10 +61,16 @@ namespace Kiểm_tra_trắc_nghiệm
 
                 buttonMonHoc.Click += (buttonSender, buttonEventArgs) =>
                 {
+                    this.Hide();
                     FormChuong formChuong = new FormChuong(name);
                     formChuong.ShowDialog();
                 };
             }    
+        }
+
+        private void FormMonHoc_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

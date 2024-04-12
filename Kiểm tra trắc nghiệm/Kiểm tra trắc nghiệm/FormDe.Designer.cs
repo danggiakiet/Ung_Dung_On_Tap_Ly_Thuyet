@@ -35,6 +35,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.bttback = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelChuong
@@ -114,11 +115,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // bttback
+            // 
+            this.bttback.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttback.Location = new System.Drawing.Point(677, 12);
+            this.bttback.Name = "bttback";
+            this.bttback.Size = new System.Drawing.Size(111, 39);
+            this.bttback.TabIndex = 14;
+            this.bttback.Text = "Quay lại";
+            this.bttback.UseVisualStyleBackColor = true;
+            this.bttback.Click += new System.EventHandler(this.bttback_Click);
+            // 
             // FormDe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 249);
+            this.Controls.Add(this.bttback);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -127,7 +140,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labelChuong);
             this.Name = "FormDe";
-            this.Text = "FormDe";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Chọn đề";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormDe_FormClosing);
             this.Load += new System.EventHandler(this.FormDe_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -143,5 +158,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bttback;
     }
 }

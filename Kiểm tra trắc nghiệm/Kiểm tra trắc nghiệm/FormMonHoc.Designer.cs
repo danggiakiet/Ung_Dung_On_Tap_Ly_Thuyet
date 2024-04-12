@@ -37,17 +37,19 @@
             this.panelMonHoc.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelMonHoc.Location = new System.Drawing.Point(20, 22);
             this.panelMonHoc.Name = "panelMonHoc";
-            this.panelMonHoc.Size = new System.Drawing.Size(645, 401);
+            this.panelMonHoc.Size = new System.Drawing.Size(578, 401);
             this.panelMonHoc.TabIndex = 0;
             // 
             // FormMonHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 436);
+            this.ClientSize = new System.Drawing.Size(616, 436);
             this.Controls.Add(this.panelMonHoc);
             this.Name = "FormMonHoc";
-            this.Text = "FormMonHoc";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Chọn môn học";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormMonHoc_FormClosing);
             this.Load += new System.EventHandler(this.FormMonHoc_Load);
             this.ResumeLayout(false);
 

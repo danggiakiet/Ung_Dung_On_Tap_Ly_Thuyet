@@ -1,6 +1,6 @@
 ﻿namespace Kiểm_tra_trắc_nghiệm
 {
-    partial class Form1
+    partial class FormLamBai
     {
         /// <summary>
         /// Required designer variable.
@@ -39,6 +39,7 @@
             this.bttTien = new System.Windows.Forms.Button();
             this.bttNopBai = new System.Windows.Forms.Button();
             this.labelSoCauHoi = new System.Windows.Forms.Label();
+            this.bttback = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBoxCauHoi
@@ -156,11 +157,23 @@
             this.labelSoCauHoi.TabIndex = 12;
             this.labelSoCauHoi.Text = "label2";
             // 
-            // Form1
+            // bttback
+            // 
+            this.bttback.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttback.Location = new System.Drawing.Point(760, 9);
+            this.bttback.Name = "bttback";
+            this.bttback.Size = new System.Drawing.Size(111, 39);
+            this.bttback.TabIndex = 13;
+            this.bttback.Text = "Quay lại";
+            this.bttback.UseVisualStyleBackColor = true;
+            this.bttback.Click += new System.EventHandler(this.bttback_Click);
+            // 
+            // FormLamBai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(883, 683);
+            this.Controls.Add(this.bttback);
             this.Controls.Add(this.labelSoCauHoi);
             this.Controls.Add(this.bttNopBai);
             this.Controls.Add(this.bttTien);
@@ -172,8 +185,10 @@
             this.Controls.Add(this.labelSoCauDung);
             this.Controls.Add(this.labelChuong);
             this.Controls.Add(this.richTextBoxCauHoi);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormLamBai";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Làm bài";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormLamBai_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -193,6 +208,7 @@
         private System.Windows.Forms.Button bttTien;
         private System.Windows.Forms.Button bttNopBai;
         private System.Windows.Forms.Label labelSoCauHoi;
+        private System.Windows.Forms.Button bttback;
     }
 }
 

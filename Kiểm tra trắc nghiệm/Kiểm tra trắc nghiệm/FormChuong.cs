@@ -79,12 +79,25 @@ namespace Kiểm_tra_trắc_nghiệm
 
                 buttonChuong.Click += (buttonSender, buttonEventArgs) =>
                 {
+                    this.Hide();
                     FormDe formDe = new FormDe(monHoc, buttonChuong.Text);
                     formDe.ShowDialog();
                 };
                 count++;
 
             }
+        }
+
+        private void bttback_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormMonHoc formMonHoc = new FormMonHoc();
+            formMonHoc.ShowDialog();
+        }
+
+        private void FormChuong_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

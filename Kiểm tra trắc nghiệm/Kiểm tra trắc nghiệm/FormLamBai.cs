@@ -16,7 +16,7 @@ using OfficeOpenXml.FormulaParsing.Excel.Functions.Math;
 
 namespace Kiểm_tra_trắc_nghiệm
 {
-    public partial class Form1 : Form
+    public partial class FormLamBai : Form
     {
         private Random random = new Random();
         List<cauHoi> dsCauHoi = new List<cauHoi>();
@@ -25,10 +25,11 @@ namespace Kiểm_tra_trắc_nghiệm
         Hashtable HashTableCauSai = new Hashtable();
         Hashtable kiemTraDaLamChua = new Hashtable();
         string chuong;
+        string monhoc;
         int index = 0;
         int count = 0;
         loadData loadData = new loadData();
-        public Form1()
+        public FormLamBai()
         {
             InitializeComponent();
             bttNopBai.Visible = false;
@@ -63,11 +64,12 @@ namespace Kiểm_tra_trắc_nghiệm
                 list[n] = temp;
             }
         }
-        public Form1(string monHoc,string Chuong, int De)
+        public FormLamBai(string monHoc,string Chuong, int De)
         {
+            monhoc = monHoc;
             InitializeComponent();
             chuong = Chuong;
-            loadData.LoadDataFromExcel(dsCauHoi , monHoc, chuong);
+            loadData.LoadDataFromExcel(dsCauHoi , monhoc, chuong);
             // Lọc danh sách câu hỏi theo "De"
             dsCauHoiCuaDe = GetQuestionsForDe(dsCauHoi, De);
             Shuffle(dsCauHoiCuaDe);
@@ -79,6 +81,10 @@ namespace Kiểm_tra_trắc_nghiệm
         }
         private void bttLui_Click(object sender, EventArgs e)
         {
+            bttCauA.BackColor = SystemColors.Control;
+            bttCauB.BackColor = SystemColors.Control;
+            bttCauC.BackColor = SystemColors.Control;
+            bttCauD.BackColor = SystemColors.Control;
             index--;
             cauHoi cauHoiHienTai = dsCauHoiCuaDe[index];
             bool containsKey = kiemTraDaLamChua.ContainsKey(index);
@@ -106,6 +112,22 @@ namespace Kiểm_tra_trắc_nghiệm
                             break;
                     }
                 }
+                switch (cauHoiHienTai.dapAnDung)
+                {
+                    case 1:
+                        bttCauA.BackColor = Color.LightGreen;
+                        break;
+                    case 2:
+                        bttCauB.BackColor = Color.LightGreen;
+                        break;
+                    case 3:
+                        bttCauC.BackColor = Color.LightGreen;
+                        break;
+                    case 4:
+                        bttCauD.BackColor = Color.LightGreen;
+                        break;
+                }
+
             }
             else
             {
@@ -113,10 +135,6 @@ namespace Kiểm_tra_trắc_nghiệm
                 bttCauB.Enabled = true;
                 bttCauC.Enabled = true;
                 bttCauD.Enabled = true;
-                bttCauA.BackColor = SystemColors.Control;
-                bttCauB.BackColor = SystemColors.Control;
-                bttCauC.BackColor = SystemColors.Control;
-                bttCauD.BackColor = SystemColors.Control;
             }
 
             // Kiểm tra điều kiện và thiết lập bttLui.Visible
@@ -129,6 +147,10 @@ namespace Kiểm_tra_trắc_nghiệm
         }
         private void bttTien_Click(object sender, EventArgs e)
         {
+            bttCauA.BackColor = SystemColors.Control;
+            bttCauB.BackColor = SystemColors.Control;
+            bttCauC.BackColor = SystemColors.Control;
+            bttCauD.BackColor = SystemColors.Control;
             index++;
             cauHoi cauHoiHienTai = dsCauHoiCuaDe[index];
             bool containsKey = kiemTraDaLamChua.ContainsKey(index);
@@ -157,6 +179,21 @@ namespace Kiểm_tra_trắc_nghiệm
                             break;
                     }
                 }
+                switch (cauHoiHienTai.dapAnDung)
+                {
+                    case 1:
+                        bttCauA.BackColor = Color.LightGreen;
+                        break;
+                    case 2:
+                        bttCauB.BackColor = Color.LightGreen;
+                        break;
+                    case 3:
+                        bttCauC.BackColor = Color.LightGreen;
+                        break;
+                    case 4:
+                        bttCauD.BackColor = Color.LightGreen;
+                        break;
+                }
             }
             else
             {
@@ -164,10 +201,6 @@ namespace Kiểm_tra_trắc_nghiệm
                 bttCauB.Enabled = true;
                 bttCauC.Enabled = true;
                 bttCauD.Enabled = true;
-                bttCauA.BackColor = SystemColors.Control;
-                bttCauB.BackColor = SystemColors.Control;
-                bttCauC.BackColor = SystemColors.Control;
-                bttCauD.BackColor = SystemColors.Control;
             }
             if (index >= dsCauHoiCuaDe.Count - 1)
             {
@@ -263,9 +296,9 @@ namespace Kiểm_tra_trắc_nghiệm
         private void KiemTraDapAn(int dapAn)
         {
             cauHoi cauHoiHienTai = dsCauHoiCuaDe[index];
+            kiemTraDaLamChua.Add(index, dapAn);
             if (dapAn == cauHoiHienTai.dapAnDung)
             {
-                kiemTraDaLamChua.Add(index, dapAn);
                 count++;
                 labelSoCauDung.Text = $"Số câu đúng: {count}/{dsCauHoiCuaDe.Count}";
                 if (dapAn == 1)
@@ -291,7 +324,6 @@ namespace Kiểm_tra_trắc_nghiệm
             }
             else
             {
-                kiemTraDaLamChua.Add(index, dapAn);
                 HashTableCauSai.Add(index, dapAn);
                 dsCauSai.Add(cauHoiHienTai);
                 if (dapAn == 1)
@@ -337,6 +369,19 @@ namespace Kiểm_tra_trắc_nghiệm
         {
             FormNopBai formNopBai = new FormNopBai(count,dsCauSai.Count, dsCauSai, dsCauHoiCuaDe);
             formNopBai.ShowDialog();
+        }
+
+        private void bttback_Click(object sender, EventArgs e)
+        {
+            //Mở lại trang chọn đề
+            this.Hide();
+            FormDe formDe = new FormDe(monhoc, chuong);
+            formDe.ShowDialog();
+        }
+
+        private void FormLamBai_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }

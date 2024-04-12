@@ -1,4 +1,5 @@
-﻿using OfficeOpenXml;
+﻿using Microsoft.Office.Interop.Excel;
+using OfficeOpenXml;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -53,38 +54,58 @@ namespace Kiểm_tra_trắc_nghiệm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 form1De1 = new Form1(monHoc, chuong, 1);
-            form1De1.ShowDialog();
+            this.Hide();
+            FormLamBai formLamBaiDe1 = new FormLamBai(monHoc, chuong, 1);
+            formLamBaiDe1.ShowDialog();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form1 form1De2 = new Form1(monHoc, chuong, 2);
-            form1De2.ShowDialog();
+            this.Hide();
+            FormLamBai formLamBaiDe2 = new FormLamBai(monHoc, chuong, 2);
+            formLamBaiDe2.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form1 form1De3 = new Form1(monHoc, chuong, 3);
-            form1De3.ShowDialog();
+            this.Hide();
+            FormLamBai formLamBaiDe3 = new FormLamBai(monHoc, chuong, 3);
+            formLamBaiDe3.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form1 form1De4 = new Form1(monHoc, chuong, 4);
-            form1De4.ShowDialog();
+            this.Hide();
+            FormLamBai formLamBaiDe4 = new FormLamBai(monHoc, chuong, 4);
+            formLamBaiDe4.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form1 form1De5 = new Form1(monHoc, chuong, 5);
-            form1De5.ShowDialog();
+            this.Hide();
+            FormLamBai formLamBaiDe5 = new FormLamBai(monHoc, chuong, 5);
+            formLamBaiDe5.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Form1 form1De6 = new Form1(monHoc, chuong, 6);
-            form1De6.ShowDialog();
+            this.Hide();
+            FormLamBai formLamBaiDe6 = new FormLamBai(monHoc, chuong, 6);
+            formLamBaiDe6.ShowDialog();
+        }
+
+        private void FormDe_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void bttback_Click(object sender, EventArgs e)
+        {
+            //Mở lại trang chọn chương
+            this.Hide();
+            FormChuong formChuong = new FormChuong(monHoc);
+            formChuong.ShowDialog();
         }
     }
 }

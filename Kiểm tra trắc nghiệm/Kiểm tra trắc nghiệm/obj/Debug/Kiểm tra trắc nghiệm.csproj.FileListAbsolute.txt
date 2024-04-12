@@ -42,7 +42,6 @@ D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghi�
 D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\EPPlus.xml
 D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.AssemblyReference.cache
 D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.ResolveComReference.cache
-D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.Form1.resources
 D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormChuong.resources
 D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormDe.resources
 D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormMonHoc.resources
@@ -53,3 +52,4 @@ D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghi�
 D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra.68A06BD2.Up2Date
 D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.exe
 D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.pdb
+D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormLamBai.resources
