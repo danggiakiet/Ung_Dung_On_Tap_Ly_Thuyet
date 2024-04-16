@@ -18,6 +18,7 @@ namespace Kiểm_tra_trắc_nghiệm
     {
         List<string> chuongs = new List<string>();
         string monHoc;
+        CreateControls CreateControls = new CreateControls();
         public FormChuong()
         {
             InitializeComponent();
@@ -50,15 +51,6 @@ namespace Kiểm_tra_trắc_nghiệm
                 MessageBox.Show("Lỗi đường dẫn", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        public Button CreateButton(int x, int y, int width, int height, string name)
-        {
-            Button btt = new Button();
-            btt.Text = name;
-            btt.Width = width;
-            btt.Height = height;
-            btt.Location = new Point(x, y);
-            return btt;
-        }
 
         private void FormChuong_Load(object sender, EventArgs e)
         {
@@ -73,7 +65,7 @@ namespace Kiểm_tra_trắc_nghiệm
                     x = 100;
                 }
 
-                Button buttonChuong = CreateButton(x, y, 146, 44, name);
+                Button buttonChuong = CreateControls.CreateButton(x, y, 146, 44, name);
                 panelChuong.Controls.Add(buttonChuong);
                 x = x + 200;
 

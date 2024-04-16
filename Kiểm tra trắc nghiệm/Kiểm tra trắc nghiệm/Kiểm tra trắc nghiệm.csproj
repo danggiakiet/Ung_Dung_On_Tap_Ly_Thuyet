@@ -54,6 +54,7 @@
   <ItemGroup>
     <Compile Include="cauHoi.cs" />
     <Compile Include="cauLamSai.cs" />
+    <Compile Include="CreateControls.cs" />
     <Compile Include="FormLamBai.cs">
       <SubType>Form</SubType>
     </Compile>

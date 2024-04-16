@@ -14,18 +14,10 @@ namespace Kiểm_tra_trắc_nghiệm
     public partial class FormMonHoc : Form
     {
         List<string> names = new List<string>();
+        CreateControls CreateControls = new CreateControls();
         public FormMonHoc()
         {
             InitializeComponent();
-        }
-        public Button CreateButton(int x, int y, int width, int height, string name)
-        {
-            Button btt = new Button();
-            btt.Text = name;
-            btt.Width = width;
-            btt.Height = height;
-            btt.Location = new Point(x, y);
-            return btt;
         }
         private void loadTenThuMuc()
         {
@@ -55,11 +47,11 @@ namespace Kiểm_tra_trắc_nghiệm
             loadTenThuMuc();
             foreach (string name in names)
             {
-                Button buttonMonHoc = CreateButton(x, y, 200, 100, name);
-                panelMonHoc.Controls.Add(buttonMonHoc);
+                Button bttMonHoc = CreateControls.CreateButton(x, y, 200, 100, name);
+                panelMonHoc.Controls.Add(bttMonHoc);
                 y = y + 110;
 
-                buttonMonHoc.Click += (buttonSender, buttonEventArgs) =>
+                bttMonHoc.Click += (buttonSender, buttonEventArgs) =>
                 {
                     this.Hide();
                     FormChuong formChuong = new FormChuong(name);
