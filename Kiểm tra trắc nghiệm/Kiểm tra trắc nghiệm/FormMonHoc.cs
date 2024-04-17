@@ -13,39 +13,18 @@ namespace Kiểm_tra_trắc_nghiệm
 {
     public partial class FormMonHoc : Form
     {
-        List<string> names = new List<string>();
+        List<string> dsTenThuMuc = new List<string>();
         CreateControls CreateControls = new CreateControls();
+        loadData loadData = new loadData();
         public FormMonHoc()
         {
             InitializeComponent();
         }
-        private void loadTenThuMuc()
-        {
-            string folderPath = "data";
-            // Kiểm tra xem thư mục có tồn tại không
-            if (Directory.Exists(folderPath))
-            {
-                // Lấy danh sách tất cả các thư mục trong thư mục hiện tại
-                string[] subDirectories = Directory.GetDirectories(folderPath);
-
-                // Xuất danh sách tên thư mục
-                foreach (string subDir in subDirectories)
-                {
-                    // Lấy tên thư mục từ đường dẫn đầy đủ
-                    string folderName = Path.GetFileName(subDir);
-                    names.Add(folderName);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Lỗi đường dẫn", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
         private void FormMonHoc_Load(object sender, EventArgs e)
         {
             int x = 180, y = 20;
-            loadTenThuMuc();
-            foreach (string name in names)
+            loadData.loadTenThuMuc(dsTenThuMuc);
+            foreach (string name in dsTenThuMuc)
             {
                 Button bttMonHoc = CreateControls.CreateButton(x, y, 200, 100, name);
                 panelMonHoc.Controls.Add(bttMonHoc);

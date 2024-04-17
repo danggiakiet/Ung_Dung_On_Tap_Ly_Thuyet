@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 using Button = System.Windows.Forms.Button;
 using Point = System.Drawing.Point;
 
@@ -19,6 +20,9 @@ namespace Kiểm_tra_trắc_nghiệm
         List<string> chuongs = new List<string>();
         string monHoc;
         CreateControls CreateControls = new CreateControls();
+        loadData loadData = new loadData();
+        List<cauHoi> dsCauHoiExam = new List<cauHoi>();
+        List<cauHoi> dsCauHayLamSai = new List<cauHoi>();
         public FormChuong()
         {
             InitializeComponent();
@@ -90,6 +94,29 @@ namespace Kiểm_tra_trắc_nghiệm
         private void FormChuong_FormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void bttThiThu_Click(object sender, EventArgs e)
+        {
+            foreach (var item in chuongs)
+            {
+                loadData.LoadDataFromExcel(dsCauHoiExam, monHoc, item, true);
+            }
+            // Sử dụng phương thức OrderBy để xáo trộn các phần tử, sau đó sử dụng Take để lấy 40 phần tử
+            var dsNgauNhien = dsCauHoiExam.OrderBy(x => Guid.NewGuid()).Take(50).ToList();
+            this.Hide();
+            FormLamBai formLamBai = new FormLamBai();
+            formLamBai.LamBaiMoRong(dsNgauNhien);
+            formLamBai.ShowDialog();
+        }
+
+        private void bttLamLaiCacCauSai_Click(object sender, EventArgs e)
+        {
+            loadData.LoadDataFromExcelPath(dsCauHayLamSai);
+            this.Hide();
+            FormLamBai formLamBai = new FormLamBai();
+            formLamBai.LamBaiMoRong(dsCauHayLamSai);
+            formLamBai.ShowDialog();
         }
     }
 }

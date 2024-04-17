@@ -26,7 +26,7 @@ namespace Kiểm_tra_trắc_nghiệm
             int xBtt = 82, yBtt = 24;
             int count = 0;
             labelChuong.Text = chuong;
-            loadData.LoadDataFromExcel(dsCauHoi, monHoc, chuong);
+            loadData.LoadDataFromExcel(dsCauHoi, monHoc, chuong, false);
             int soDe = dsCauHoi.Count / 20;
             if(dsCauHoi.Count % 20 > 0)
             {
@@ -48,8 +48,8 @@ namespace Kiểm_tra_trắc_nghiệm
                 bttDe.Click += (buttonSender, buttonEventArgs) =>
                 {
                     this.Hide();
-                    FormLamBai formLamBaiDe1 = new FormLamBai(monHoc, chuong, de);
-                    formLamBaiDe1.ShowDialog();
+                    FormLamBai formLamBai = new FormLamBai(monHoc, chuong, de);
+                    formLamBai.ShowDialog();
                 };
 
                 panelDe.Controls.Add(bttDe);

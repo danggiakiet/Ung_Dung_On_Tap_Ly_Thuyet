@@ -13,6 +13,9 @@ using Application = System.Windows.Forms.Application;
 using System.Collections;
 using System.Drawing;
 using OfficeOpenXml.FormulaParsing.Excel.Functions.Math;
+using System.Xml.Linq;
+using System.Security.Cryptography;
+using Button = System.Windows.Forms.Button;
 
 namespace Kiểm_tra_trắc_nghiệm
 {
@@ -28,18 +31,35 @@ namespace Kiểm_tra_trắc_nghiệm
         string monhoc;
         int index = 0;
         int count = 0;
+        bool extend = false;
         loadData loadData = new loadData();
         public FormLamBai()
         {
             InitializeComponent();
             bttNopBai.Visible = false;
         }
+        public FormLamBai(string monHoc, string Chuong, int De)
+        {
+            monhoc = monHoc;
+            InitializeComponent();
+            chuong = Chuong;
+            loadData.LoadDataFromExcel(dsCauHoi, monhoc, chuong, extend);
+            // Lọc danh sách câu hỏi theo "De"
+            dsCauHoiCuaDe = GetQuestionsForDe(dsCauHoi, De);
+            Shuffle(dsCauHoiCuaDe);
+        }
+        public void LamBaiMoRong(List<cauHoi> dsCauHoi)
+        {
+            dsCauHoiCuaDe = dsCauHoi;
+            extend = true;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            ShuffleAnswers(dsCauHoiCuaDe); // Trộn ngẫu nhiên thứ tự câu trả lời
             bttLui.Visible = false;
             bttNopBai.Visible = false;
             labelChuong.Text = chuong;
+            ShuffleAnswers(dsCauHoiCuaDe); // Trộn ngẫu nhiên thứ tự câu trả lời
             LoadCauHoi(dsCauHoiCuaDe, 0);
             labelSoCauDung.Text = $"Số câu đúng: {count} / {dsCauHoiCuaDe.Count}";
 
@@ -64,16 +84,7 @@ namespace Kiểm_tra_trắc_nghiệm
                 list[n] = temp;
             }
         }
-        public FormLamBai(string monHoc,string Chuong, int De)
-        {
-            monhoc = monHoc;
-            InitializeComponent();
-            chuong = Chuong;
-            loadData.LoadDataFromExcel(dsCauHoi , monhoc, chuong);
-            // Lọc danh sách câu hỏi theo "De"
-            dsCauHoiCuaDe = GetQuestionsForDe(dsCauHoi, De);
-            Shuffle(dsCauHoiCuaDe);
-        }
+
         private List<cauHoi> GetQuestionsForDe(List<cauHoi> allQuestions, int de)
         {
             // Lọc dsCauHoi theo giá trị "De"
@@ -95,11 +106,12 @@ namespace Kiểm_tra_trắc_nghiệm
                 bttCauC.Enabled = false;
                 bttCauD.Enabled = false;
                 bool containsKey2 = HashTableCauSai.ContainsKey(index);
-                if(containsKey2)
+                if (containsKey2)
                 {
-                    switch(HashTableCauSai[index]) 
+                    switch (HashTableCauSai[index])
                     {
-                        case 1: bttCauA.BackColor = Color.Red;
+                        case 1:
+                            bttCauA.BackColor = Color.Red;
                             break;
                         case 2:
                             bttCauB.BackColor = Color.Red;
@@ -213,7 +225,7 @@ namespace Kiểm_tra_trắc_nghiệm
 
         private void ShuffleAnswers(List<cauHoi> dsCauHoiCuaDe)
         {
-            foreach(cauHoi ch in dsCauHoiCuaDe)
+            foreach (cauHoi ch in dsCauHoiCuaDe)
             {
                 string dapAnDungBanDau = "";
                 switch (ch.dapAnDung)
@@ -342,7 +354,7 @@ namespace Kiểm_tra_trắc_nghiệm
                 {
                     bttCauD.BackColor = Color.Red;
                 }
-                if(cauHoiHienTai.dapAnDung == 1)
+                if (cauHoiHienTai.dapAnDung == 1)
                 {
                     bttCauA.BackColor = Color.LightGreen;
                 }
@@ -362,26 +374,100 @@ namespace Kiểm_tra_trắc_nghiệm
                 bttCauB.Enabled = false;
                 bttCauC.Enabled = false;
                 bttCauD.Enabled = false;
+                LuuCauSaiDuLieuVaoExcel(cauHoiHienTai, "Danh sách câu hỏi hay làm sai.xlsx");
             }
         }
 
         private void bttNopBai_Click(object sender, EventArgs e)
         {
-            FormNopBai formNopBai = new FormNopBai(count,dsCauSai.Count, dsCauSai, dsCauHoiCuaDe);
+            FormNopBai formNopBai = new FormNopBai(count, dsCauSai.Count, dsCauSai, dsCauHoiCuaDe);
             formNopBai.ShowDialog();
         }
 
         private void bttback_Click(object sender, EventArgs e)
         {
-            //Mở lại trang chọn đề
-            this.Hide();
-            FormDe formDe = new FormDe(monhoc, chuong);
-            formDe.ShowDialog();
+            if (extend == false)
+            {
+                //Mở lại trang chọn đề
+                this.Hide();
+                FormDe formDe = new FormDe(monhoc, chuong);
+                formDe.ShowDialog();
+            }
+            else if (extend == true)
+            {
+                this.Hide();
+                FormMonHoc formMonHoc = new FormMonHoc();
+                formMonHoc.ShowDialog();
+                extend = false;
+            }    
         }
 
         private void FormLamBai_FormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(0);
+        }
+        public static void LuuCauSaiDuLieuVaoExcel(cauHoi CauHoi, string tenTep)
+        {
+            try
+            {
+                // Kiểm tra nếu tệp Excel đã tồn tại
+                FileInfo fileInfo = new FileInfo(tenTep);
+                ExcelPackage package;
+                if (fileInfo.Exists)
+                {
+                    // Mở tệp Excel đã có
+                    package = new ExcelPackage(fileInfo);
+                }
+                else
+                {
+                    // Tạo một tệp Excel mới nếu tệp không tồn tại
+                    package = new ExcelPackage();
+                }
+
+                // Kiểm tra nếu có tồn tại một trang tính có tên "DanhSachCauHoi", nếu không, tạo mới
+                ExcelWorksheet worksheet = package.Workbook.Worksheets.FirstOrDefault(ws => ws.Name == "DsCauHoiLamSai");
+                if (worksheet == null)
+                {
+                    worksheet = package.Workbook.Worksheets.Add("DsCauHoiLamSai");
+                }
+
+                // Xác định hàng bắt đầu ghi dữ liệu (nếu tệp đã có dữ liệu, tiếp tục từ hàng tiếp theo)
+                int startRow = worksheet.Dimension.End.Row + 1;
+
+                bool tonTai = false;
+
+                // Duyệt qua các dòng trong tệp Excel để kiểm tra sự tồn tại của câu hỏi
+                for (int i = 1; i <= worksheet.Dimension.End.Row; i++)
+                {
+                    string cauHoiTrongExcel = worksheet.Cells[i, 1].Value.ToString();
+                    if (cauHoiTrongExcel == CauHoi.CauHoi)
+                    {
+                        // Nếu câu hỏi đã tồn tại, đặt biến tonTai thành true và thoát khỏi vòng lặp
+                        tonTai = true;
+                        break;
+                    }
+                }
+
+                // Nếu câu hỏi không tồn tại, thêm vào tệp Excel
+                if (!tonTai)
+                {
+                    worksheet.Cells[startRow, 1].Value = CauHoi.CauHoi;
+                    worksheet.Cells[startRow, 2].Value = CauHoi.cauA;
+                    worksheet.Cells[startRow, 3].Value = CauHoi.cauB;
+                    worksheet.Cells[startRow, 4].Value = CauHoi.cauC;
+                    worksheet.Cells[startRow, 5].Value = CauHoi.cauD;
+                    worksheet.Cells[startRow, 6].Value = CauHoi.dapAnDung;
+                    startRow++; // Tăng chỉ số hàng bắt đầu ghi dữ liệu lên để ghi vào hàng tiếp theo
+                }
+
+
+                // Lưu tệp Excel
+                package.SaveAs(fileInfo);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Lỗi khi ghi dữ liệu vào tệp Excel: " + ex.Message);
+            }
         }
     }
 }
