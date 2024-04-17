@@ -40,6 +40,7 @@
             this.bttNopBai = new System.Windows.Forms.Button();
             this.labelSoCauHoi = new System.Windows.Forms.Label();
             this.bttback = new System.Windows.Forms.Button();
+            this.bttXoaDuLieu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // richTextBoxCauHoi
@@ -168,11 +169,23 @@
             this.bttback.UseVisualStyleBackColor = true;
             this.bttback.Click += new System.EventHandler(this.bttback_Click);
             // 
+            // bttXoaDuLieu
+            // 
+            this.bttXoaDuLieu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttXoaDuLieu.Location = new System.Drawing.Point(12, 12);
+            this.bttXoaDuLieu.Name = "bttXoaDuLieu";
+            this.bttXoaDuLieu.Size = new System.Drawing.Size(111, 39);
+            this.bttXoaDuLieu.TabIndex = 14;
+            this.bttXoaDuLieu.Text = "Xóa dữ liệu";
+            this.bttXoaDuLieu.UseVisualStyleBackColor = true;
+            this.bttXoaDuLieu.Click += new System.EventHandler(this.bttXoaDuLieu_Click);
+            // 
             // FormLamBai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(883, 683);
+            this.Controls.Add(this.bttXoaDuLieu);
             this.Controls.Add(this.bttback);
             this.Controls.Add(this.labelSoCauHoi);
             this.Controls.Add(this.bttNopBai);
@@ -209,6 +222,7 @@
         private System.Windows.Forms.Button bttNopBai;
         private System.Windows.Forms.Label labelSoCauHoi;
         private System.Windows.Forms.Button bttback;
+        private System.Windows.Forms.Button bttXoaDuLieu;
     }
 }
 

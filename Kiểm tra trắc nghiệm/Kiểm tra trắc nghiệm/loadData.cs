@@ -36,14 +36,20 @@ namespace Kiểm_tra_trắc_nghiệm
                 MessageBox.Show("Lỗi đường dẫn", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        public void LoadDataFromExcelPath(List<cauHoi> dsCauHayLamSai)
+        public void LoadDataFromExcelPath(List<cauHoi> dsCauHayLamSai, string monHoc)
         {
             try
             {
                 // Mở file excel
-                using (var package = new ExcelPackage(new FileInfo("Danh sách câu hỏi hay làm sai.xlsx")))
+                using (var package = new ExcelPackage(new FileInfo($"Câu hay làm sai/{monHoc}/Danh sách câu hỏi hay làm sai.xlsx")))
                 {
                     ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
+                    // Kiểm tra xem có dữ liệu trong danh sách không
+                    if (worksheet.Dimension.Rows <= 1)
+                    {
+                        MessageBox.Show("Không có dữ liệu trong tệp Excel.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
                     // Cho duyệt từ dòng 2 đến hết
                     for (int i = 2; i <= worksheet.Dimension.End.Row; i++)
                     {
@@ -81,6 +87,12 @@ namespace Kiểm_tra_trắc_nghiệm
                 using (var package = new ExcelPackage(new FileInfo($"data/{monHoc}/{chuong}.xlsx")))
                 {
                     ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
+                    // Kiểm tra xem có dữ liệu trong danh sách không
+                    if (worksheet.Dimension.Rows <= 1)
+                    {
+                        MessageBox.Show("Không có dữ liệu trong tệp Excel.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
                     // Cho duyệt từ dòng 2 đến hết
                     for (int i = 2; i <= worksheet.Dimension.End.Row; i++)
                     {

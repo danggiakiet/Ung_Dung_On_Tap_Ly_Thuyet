@@ -16,6 +16,7 @@ using OfficeOpenXml.FormulaParsing.Excel.Functions.Math;
 using System.Xml.Linq;
 using System.Security.Cryptography;
 using Button = System.Windows.Forms.Button;
+using System.Web;
 
 namespace Kiểm_tra_trắc_nghiệm
 {
@@ -32,7 +33,9 @@ namespace Kiểm_tra_trắc_nghiệm
         int index = 0;
         int count = 0;
         bool extend = false;
+        string Mode;
         loadData loadData = new loadData();
+        cauLamSai cauLamSai = new cauLamSai();
         public FormLamBai()
         {
             InitializeComponent();
@@ -48,8 +51,10 @@ namespace Kiểm_tra_trắc_nghiệm
             dsCauHoiCuaDe = GetQuestionsForDe(dsCauHoi, De);
             Shuffle(dsCauHoiCuaDe);
         }
-        public void LamBaiMoRong(List<cauHoi> dsCauHoi)
+        public void LamBaiMoRong(List<cauHoi> dsCauHoi, string monHoc, string mode)
         {
+            this.monhoc = monHoc;
+            Mode = mode;
             dsCauHoiCuaDe = dsCauHoi;
             extend = true;
         }
@@ -62,7 +67,19 @@ namespace Kiểm_tra_trắc_nghiệm
             ShuffleAnswers(dsCauHoiCuaDe); // Trộn ngẫu nhiên thứ tự câu trả lời
             LoadCauHoi(dsCauHoiCuaDe, 0);
             labelSoCauDung.Text = $"Số câu đúng: {count} / {dsCauHoiCuaDe.Count}";
-
+            bttXoaDuLieu.Visible = false;
+            if (Mode == "Làm câu sai")
+            {
+                bttXoaDuLieu.Visible = true;
+            }
+            else
+            {
+                bttXoaDuLieu.Visible = false;
+            }
+            if(dsCauHoiCuaDe.Count == 1 )
+            {
+                bttTien.Visible = false;
+            }
         }
         public void Form_CauSai(List<cauHoi> dsCauSai)
         {
@@ -374,10 +391,11 @@ namespace Kiểm_tra_trắc_nghiệm
                 bttCauB.Enabled = false;
                 bttCauC.Enabled = false;
                 bttCauD.Enabled = false;
-                LuuCauSaiDuLieuVaoExcel(cauHoiHienTai, "Danh sách câu hỏi hay làm sai.xlsx");
+                cauLamSai.LuuCauSai(monhoc, cauHoiHienTai);
+                            
+                
             }
         }
-
         private void bttNopBai_Click(object sender, EventArgs e)
         {
             FormNopBai formNopBai = new FormNopBai(count, dsCauSai.Count, dsCauSai, dsCauHoiCuaDe);
@@ -399,75 +417,20 @@ namespace Kiểm_tra_trắc_nghiệm
                 FormMonHoc formMonHoc = new FormMonHoc();
                 formMonHoc.ShowDialog();
                 extend = false;
-            }    
+            }
         }
 
         private void FormLamBai_FormClosing(object sender, FormClosingEventArgs e)
         {
             Environment.Exit(0);
         }
-        public static void LuuCauSaiDuLieuVaoExcel(cauHoi CauHoi, string tenTep)
+
+        private void bttXoaDuLieu_Click(object sender, EventArgs e)
         {
-            try
-            {
-                // Kiểm tra nếu tệp Excel đã tồn tại
-                FileInfo fileInfo = new FileInfo(tenTep);
-                ExcelPackage package;
-                if (fileInfo.Exists)
-                {
-                    // Mở tệp Excel đã có
-                    package = new ExcelPackage(fileInfo);
-                }
-                else
-                {
-                    // Tạo một tệp Excel mới nếu tệp không tồn tại
-                    package = new ExcelPackage();
-                }
-
-                // Kiểm tra nếu có tồn tại một trang tính có tên "DanhSachCauHoi", nếu không, tạo mới
-                ExcelWorksheet worksheet = package.Workbook.Worksheets.FirstOrDefault(ws => ws.Name == "DsCauHoiLamSai");
-                if (worksheet == null)
-                {
-                    worksheet = package.Workbook.Worksheets.Add("DsCauHoiLamSai");
-                }
-
-                // Xác định hàng bắt đầu ghi dữ liệu (nếu tệp đã có dữ liệu, tiếp tục từ hàng tiếp theo)
-                int startRow = worksheet.Dimension.End.Row + 1;
-
-                bool tonTai = false;
-
-                // Duyệt qua các dòng trong tệp Excel để kiểm tra sự tồn tại của câu hỏi
-                for (int i = 1; i <= worksheet.Dimension.End.Row; i++)
-                {
-                    string cauHoiTrongExcel = worksheet.Cells[i, 1].Value.ToString();
-                    if (cauHoiTrongExcel == CauHoi.CauHoi)
-                    {
-                        // Nếu câu hỏi đã tồn tại, đặt biến tonTai thành true và thoát khỏi vòng lặp
-                        tonTai = true;
-                        break;
-                    }
-                }
-
-                // Nếu câu hỏi không tồn tại, thêm vào tệp Excel
-                if (!tonTai)
-                {
-                    worksheet.Cells[startRow, 1].Value = CauHoi.CauHoi;
-                    worksheet.Cells[startRow, 2].Value = CauHoi.cauA;
-                    worksheet.Cells[startRow, 3].Value = CauHoi.cauB;
-                    worksheet.Cells[startRow, 4].Value = CauHoi.cauC;
-                    worksheet.Cells[startRow, 5].Value = CauHoi.cauD;
-                    worksheet.Cells[startRow, 6].Value = CauHoi.dapAnDung;
-                    startRow++; // Tăng chỉ số hàng bắt đầu ghi dữ liệu lên để ghi vào hàng tiếp theo
-                }
-
-
-                // Lưu tệp Excel
-                package.SaveAs(fileInfo);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Lỗi khi ghi dữ liệu vào tệp Excel: " + ex.Message);
-            }
+            cauLamSai.XoaDanhSachCauHayLamSai(monhoc);
+            this.Hide();
+            FormMonHoc formMonHoc = new FormMonHoc();
+            formMonHoc.ShowDialog();
         }
     }
 }

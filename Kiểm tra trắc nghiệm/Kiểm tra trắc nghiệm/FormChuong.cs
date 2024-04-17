@@ -106,17 +106,31 @@ namespace Kiểm_tra_trắc_nghiệm
             var dsNgauNhien = dsCauHoiExam.OrderBy(x => Guid.NewGuid()).Take(50).ToList();
             this.Hide();
             FormLamBai formLamBai = new FormLamBai();
-            formLamBai.LamBaiMoRong(dsNgauNhien);
+            formLamBai.LamBaiMoRong(dsNgauNhien, monHoc, "Thi thử");
             formLamBai.ShowDialog();
         }
 
         private void bttLamLaiCacCauSai_Click(object sender, EventArgs e)
         {
-            loadData.LoadDataFromExcelPath(dsCauHayLamSai);
-            this.Hide();
-            FormLamBai formLamBai = new FormLamBai();
-            formLamBai.LamBaiMoRong(dsCauHayLamSai);
-            formLamBai.ShowDialog();
+            int check = 0;
+            loadData.LoadDataFromExcelPath(dsCauHayLamSai, monHoc);
+            if (dsCauHayLamSai.Count <= 0)
+            {
+                return;
+                check = 0;
+            }
+            else
+            {
+                check = 1;
+            }
+            if (check == 1)
+            {
+                this.Hide();
+                FormLamBai formLamBai = new FormLamBai();
+                formLamBai.LamBaiMoRong(dsCauHayLamSai, monHoc, "Làm câu sai");
+                formLamBai.ShowDialog();
+            }
+            else { return; }
         }
     }
 }
