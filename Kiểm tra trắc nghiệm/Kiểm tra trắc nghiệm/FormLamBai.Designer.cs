@@ -45,12 +45,13 @@
             // 
             // richTextBoxCauHoi
             // 
+            this.richTextBoxCauHoi.BackColor = System.Drawing.Color.LightGray;
             this.richTextBoxCauHoi.Cursor = System.Windows.Forms.Cursors.No;
-            this.richTextBoxCauHoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBoxCauHoi.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBoxCauHoi.Location = new System.Drawing.Point(12, 63);
             this.richTextBoxCauHoi.Name = "richTextBoxCauHoi";
             this.richTextBoxCauHoi.ReadOnly = true;
-            this.richTextBoxCauHoi.Size = new System.Drawing.Size(859, 269);
+            this.richTextBoxCauHoi.Size = new System.Drawing.Size(829, 235);
             this.richTextBoxCauHoi.TabIndex = 0;
             this.richTextBoxCauHoi.Text = "";
             // 
@@ -69,7 +70,7 @@
             // 
             this.labelSoCauDung.AutoSize = true;
             this.labelSoCauDung.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSoCauDung.Location = new System.Drawing.Point(12, 335);
+            this.labelSoCauDung.Location = new System.Drawing.Point(14, 305);
             this.labelSoCauDung.Name = "labelSoCauDung";
             this.labelSoCauDung.Size = new System.Drawing.Size(59, 22);
             this.labelSoCauDung.TabIndex = 3;
@@ -77,48 +78,48 @@
             // 
             // bttCauA
             // 
-            this.bttCauA.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttCauA.Location = new System.Drawing.Point(12, 375);
+            this.bttCauA.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttCauA.Location = new System.Drawing.Point(454, 338);
             this.bttCauA.Name = "bttCauA";
-            this.bttCauA.Size = new System.Drawing.Size(417, 102);
+            this.bttCauA.Size = new System.Drawing.Size(387, 105);
             this.bttCauA.TabIndex = 4;
             this.bttCauA.UseVisualStyleBackColor = true;
             this.bttCauA.Click += new System.EventHandler(this.bttCauA_Click);
             // 
             // bttCauB
             // 
-            this.bttCauB.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttCauB.Location = new System.Drawing.Point(454, 375);
+            this.bttCauB.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttCauB.Location = new System.Drawing.Point(12, 338);
             this.bttCauB.Name = "bttCauB";
-            this.bttCauB.Size = new System.Drawing.Size(417, 102);
+            this.bttCauB.Size = new System.Drawing.Size(387, 105);
             this.bttCauB.TabIndex = 5;
             this.bttCauB.UseVisualStyleBackColor = true;
             this.bttCauB.Click += new System.EventHandler(this.bttCauB_Click);
             // 
             // bttCauC
             // 
-            this.bttCauC.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttCauC.Location = new System.Drawing.Point(12, 502);
+            this.bttCauC.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttCauC.Location = new System.Drawing.Point(12, 462);
             this.bttCauC.Name = "bttCauC";
-            this.bttCauC.Size = new System.Drawing.Size(417, 102);
+            this.bttCauC.Size = new System.Drawing.Size(387, 105);
             this.bttCauC.TabIndex = 6;
             this.bttCauC.UseVisualStyleBackColor = true;
             this.bttCauC.Click += new System.EventHandler(this.bttCauC_Click);
             // 
             // bttCauD
             // 
-            this.bttCauD.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttCauD.Location = new System.Drawing.Point(454, 502);
+            this.bttCauD.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttCauD.Location = new System.Drawing.Point(454, 462);
             this.bttCauD.Name = "bttCauD";
-            this.bttCauD.Size = new System.Drawing.Size(417, 102);
+            this.bttCauD.Size = new System.Drawing.Size(387, 105);
             this.bttCauD.TabIndex = 7;
             this.bttCauD.UseVisualStyleBackColor = true;
             this.bttCauD.Click += new System.EventHandler(this.bttCauD_Click);
             // 
             // bttLui
             // 
-            this.bttLui.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttLui.Location = new System.Drawing.Point(354, 634);
+            this.bttLui.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttLui.Location = new System.Drawing.Point(336, 584);
             this.bttLui.Name = "bttLui";
             this.bttLui.Size = new System.Drawing.Size(75, 37);
             this.bttLui.TabIndex = 9;
@@ -128,8 +129,8 @@
             // 
             // bttTien
             // 
-            this.bttTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttTien.Location = new System.Drawing.Point(454, 634);
+            this.bttTien.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttTien.Location = new System.Drawing.Point(436, 584);
             this.bttTien.Name = "bttTien";
             this.bttTien.Size = new System.Drawing.Size(75, 37);
             this.bttTien.TabIndex = 10;
@@ -139,20 +140,21 @@
             // 
             // bttNopBai
             // 
-            this.bttNopBai.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttNopBai.Location = new System.Drawing.Point(760, 634);
+            this.bttNopBai.BackColor = System.Drawing.Color.White;
+            this.bttNopBai.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttNopBai.Location = new System.Drawing.Point(730, 584);
             this.bttNopBai.Name = "bttNopBai";
             this.bttNopBai.Size = new System.Drawing.Size(111, 37);
             this.bttNopBai.TabIndex = 11;
             this.bttNopBai.Text = "Nộp bài";
-            this.bttNopBai.UseVisualStyleBackColor = true;
+            this.bttNopBai.UseVisualStyleBackColor = false;
             this.bttNopBai.Click += new System.EventHandler(this.bttNopBai_Click);
             // 
             // labelSoCauHoi
             // 
             this.labelSoCauHoi.AutoSize = true;
             this.labelSoCauHoi.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSoCauHoi.Location = new System.Drawing.Point(682, 335);
+            this.labelSoCauHoi.Location = new System.Drawing.Point(706, 306);
             this.labelSoCauHoi.Name = "labelSoCauHoi";
             this.labelSoCauHoi.Size = new System.Drawing.Size(59, 22);
             this.labelSoCauHoi.TabIndex = 12;
@@ -160,31 +162,34 @@
             // 
             // bttback
             // 
-            this.bttback.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttback.Location = new System.Drawing.Point(760, 9);
+            this.bttback.BackColor = System.Drawing.Color.White;
+            this.bttback.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttback.Location = new System.Drawing.Point(730, 9);
             this.bttback.Name = "bttback";
             this.bttback.Size = new System.Drawing.Size(111, 39);
             this.bttback.TabIndex = 13;
             this.bttback.Text = "Quay lại";
-            this.bttback.UseVisualStyleBackColor = true;
+            this.bttback.UseVisualStyleBackColor = false;
             this.bttback.Click += new System.EventHandler(this.bttback_Click);
             // 
             // bttXoaDuLieu
             // 
-            this.bttXoaDuLieu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttXoaDuLieu.BackColor = System.Drawing.Color.White;
+            this.bttXoaDuLieu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttXoaDuLieu.Location = new System.Drawing.Point(12, 12);
             this.bttXoaDuLieu.Name = "bttXoaDuLieu";
             this.bttXoaDuLieu.Size = new System.Drawing.Size(111, 39);
             this.bttXoaDuLieu.TabIndex = 14;
             this.bttXoaDuLieu.Text = "Xóa dữ liệu";
-            this.bttXoaDuLieu.UseVisualStyleBackColor = true;
+            this.bttXoaDuLieu.UseVisualStyleBackColor = false;
             this.bttXoaDuLieu.Click += new System.EventHandler(this.bttXoaDuLieu_Click);
             // 
             // FormLamBai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(883, 683);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(853, 634);
             this.Controls.Add(this.bttXoaDuLieu);
             this.Controls.Add(this.bttback);
             this.Controls.Add(this.labelSoCauHoi);

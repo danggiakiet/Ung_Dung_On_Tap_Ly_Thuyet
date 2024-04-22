@@ -37,7 +37,7 @@
             // 
             this.labelChuong.AutoSize = true;
             this.labelChuong.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelChuong.Location = new System.Drawing.Point(335, 19);
+            this.labelChuong.Location = new System.Drawing.Point(335, 20);
             this.labelChuong.Name = "labelChuong";
             this.labelChuong.Size = new System.Drawing.Size(85, 31);
             this.labelChuong.TabIndex = 2;
@@ -46,32 +46,35 @@
             // 
             // bttback
             // 
-            this.bttback.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttback.Location = new System.Drawing.Point(677, 12);
+            this.bttback.BackColor = System.Drawing.Color.White;
+            this.bttback.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttback.Location = new System.Drawing.Point(677, 13);
             this.bttback.Name = "bttback";
-            this.bttback.Size = new System.Drawing.Size(111, 39);
+            this.bttback.Size = new System.Drawing.Size(111, 42);
             this.bttback.TabIndex = 14;
             this.bttback.Text = "Quay lại";
-            this.bttback.UseVisualStyleBackColor = true;
+            this.bttback.UseVisualStyleBackColor = false;
             this.bttback.Click += new System.EventHandler(this.bttback_Click);
             // 
             // panelDe
             // 
             this.panelDe.AutoScroll = true;
             this.panelDe.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelDe.Location = new System.Drawing.Point(50, 61);
+            this.panelDe.Location = new System.Drawing.Point(50, 66);
             this.panelDe.Name = "panelDe";
-            this.panelDe.Size = new System.Drawing.Size(658, 172);
+            this.panelDe.Size = new System.Drawing.Size(658, 185);
             this.panelDe.TabIndex = 15;
             // 
             // FormDe
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 249);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(800, 268);
             this.Controls.Add(this.panelDe);
             this.Controls.Add(this.bttback);
             this.Controls.Add(this.labelChuong);
+            this.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "FormDe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chọn đề";

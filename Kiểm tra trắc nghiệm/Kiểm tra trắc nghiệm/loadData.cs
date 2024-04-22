@@ -47,7 +47,7 @@ namespace Kiểm_tra_trắc_nghiệm
                     // Kiểm tra xem có dữ liệu trong danh sách không
                     if (worksheet.Dimension.Rows <= 1)
                     {
-                        MessageBox.Show("Không có dữ liệu trong tệp Excel.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Không có dữ liệu.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
                     }
                     // Cho duyệt từ dòng 2 đến hết
@@ -90,7 +90,7 @@ namespace Kiểm_tra_trắc_nghiệm
                     // Kiểm tra xem có dữ liệu trong danh sách không
                     if (worksheet.Dimension.Rows <= 1)
                     {
-                        MessageBox.Show("Không có dữ liệu trong tệp Excel.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Không có dữ liệu.", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
                     }
                     // Cho duyệt từ dòng 2 đến hết
