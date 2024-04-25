@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDe));
             this.labelChuong = new System.Windows.Forms.Label();
             this.bttback = new System.Windows.Forms.Button();
             this.panelDe = new System.Windows.Forms.Panel();
@@ -75,6 +76,7 @@
             this.Controls.Add(this.bttback);
             this.Controls.Add(this.labelChuong);
             this.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormDe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chọn đề";

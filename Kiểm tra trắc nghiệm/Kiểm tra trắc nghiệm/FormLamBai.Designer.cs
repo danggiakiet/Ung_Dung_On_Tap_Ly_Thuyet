@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLamBai));
             this.richTextBoxCauHoi = new System.Windows.Forms.RichTextBox();
             this.labelChuong = new System.Windows.Forms.Label();
             this.labelSoCauDung = new System.Windows.Forms.Label();
@@ -45,7 +46,7 @@
             // 
             // richTextBoxCauHoi
             // 
-            this.richTextBoxCauHoi.BackColor = System.Drawing.Color.LightGray;
+            this.richTextBoxCauHoi.BackColor = System.Drawing.Color.White;
             this.richTextBoxCauHoi.Cursor = System.Windows.Forms.Cursors.No;
             this.richTextBoxCauHoi.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBoxCauHoi.Location = new System.Drawing.Point(12, 63);
@@ -89,6 +90,7 @@
             // bttCauB
             // 
             this.bttCauB.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bttCauB.ForeColor = System.Drawing.SystemColors.ControlText;
             this.bttCauB.Location = new System.Drawing.Point(12, 338);
             this.bttCauB.Name = "bttCauB";
             this.bttCauB.Size = new System.Drawing.Size(387, 105);
@@ -203,6 +205,7 @@
             this.Controls.Add(this.labelSoCauDung);
             this.Controls.Add(this.labelChuong);
             this.Controls.Add(this.richTextBoxCauHoi);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormLamBai";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Làm bài";

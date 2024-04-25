@@ -36,6 +36,7 @@ namespace Kiểm_tra_trắc_nghiệm
         string Mode;
         loadData loadData = new loadData();
         cauLamSai cauLamSai = new cauLamSai();
+        int demSoCauDaLam = 0;
         public FormLamBai()
         {
             InitializeComponent();
@@ -61,6 +62,7 @@ namespace Kiểm_tra_trắc_nghiệm
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            demSoCauDaLam = 0;
             bttLui.Visible = false;
             bttNopBai.Visible = false;
             labelChuong.Text = chuong;
@@ -79,6 +81,7 @@ namespace Kiểm_tra_trắc_nghiệm
             if(dsCauHoiCuaDe.Count == 1 )
             {
                 bttTien.Visible = false;
+                bttNopBai.Visible = true;
             }
         }
         public void Form_CauSai(List<cauHoi> dsCauSai)
@@ -391,15 +394,22 @@ namespace Kiểm_tra_trắc_nghiệm
                 bttCauB.Enabled = false;
                 bttCauC.Enabled = false;
                 bttCauD.Enabled = false;
-                cauLamSai.LuuCauSai(monhoc, cauHoiHienTai);
-                            
-                
+                cauLamSai.LuuCauSai(monhoc, cauHoiHienTai);                       
             }
+            demSoCauDaLam++;
         }
         private void bttNopBai_Click(object sender, EventArgs e)
         {
-            FormNopBai formNopBai = new FormNopBai(count, dsCauSai.Count, dsCauSai, dsCauHoiCuaDe);
-            formNopBai.ShowDialog();
+            if(demSoCauDaLam < dsCauHoiCuaDe.Count)
+            {
+                MessageBox.Show("Bạn chưa đủ số câu hỏi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }    
+            else if(demSoCauDaLam == dsCauHoiCuaDe.Count)
+            {
+                FormNopBai formNopBai = new FormNopBai(count, dsCauSai.Count, dsCauSai, dsCauHoiCuaDe);
+                formNopBai.ShowDialog();
+            }    
         }
 
         private void bttback_Click(object sender, EventArgs e)
