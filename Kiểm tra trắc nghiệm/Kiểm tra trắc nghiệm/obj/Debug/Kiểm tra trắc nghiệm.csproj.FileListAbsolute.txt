@@ -53,3 +53,21 @@ D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghi�
 D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.exe
 D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.pdb
 D:\Bai Tap\kiemTraTracNghiem\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormLamBai.resources
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\Kiểm tra trắc nghiệm.exe.config
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\Kiểm tra trắc nghiệm.exe
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\Kiểm tra trắc nghiệm.pdb
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\EPPlus.dll
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\bin\Debug\EPPlus.xml
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.AssemblyReference.cache
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.ResolveComReference.cache
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormLamBai.resources
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormChuong.resources
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormDe.resources
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormMonHoc.resources
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.FormNopBai.resources
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm_tra_trắc_nghiệm.Properties.Resources.resources
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.GenerateResource.cache
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.csproj.CoreCompileInputs.cache
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra.68A06BD2.Up2Date
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.exe
+D:\Bai Tap\Ung_Dung_On_Tap_Ly_Thuyet\Kiểm tra trắc nghiệm\Kiểm tra trắc nghiệm\obj\Debug\Kiểm tra trắc nghiệm.pdb

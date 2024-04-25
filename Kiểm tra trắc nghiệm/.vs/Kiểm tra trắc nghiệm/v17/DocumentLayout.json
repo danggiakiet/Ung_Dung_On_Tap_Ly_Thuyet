@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\",
+  "WorkspaceRootPath": "D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|d:\\bai tap\\kiemtratracnghiem\\ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formlambai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|solutionrelative:ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formlambai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|d:\\bai tap\\ung_dung_on_tap_ly_thuyet\\ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formlambai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|solutionrelative:ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formlambai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formnopbai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|solutionrelative:ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formnopbai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formmonhoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formmonhoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|solutionrelative:ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formmonhoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|d:\\bai tap\\kiemtratracnghiem\\ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formchuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formnopbai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|solutionrelative:ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formnopbai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formlambai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|solutionrelative:ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formlambai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formchuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|solutionrelative:ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formchuong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formde.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formde.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|solutionrelative:ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formde.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formlambai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{05F49DBD-1F05-4613-ACF6-C7063A08EB78}|Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m.csproj|solutionrelative:ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\formlambai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,28 +34,28 @@
       "DocumentGroups": [
         {
           "DockedHeight": 312,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "FormLamBai.cs",
-              "DocumentMoniker": "D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormLamBai.cs",
+              "DocumentMoniker": "D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormLamBai.cs",
               "RelativeDocumentMoniker": "Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormLamBai.cs",
-              "ToolTip": "D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormLamBai.cs",
+              "ToolTip": "D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormLamBai.cs",
               "RelativeToolTip": "Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormLamBai.cs",
-              "ViewState": "AQIAAIUBAAAAAAAAAAAAAJcBAAA4AAAA",
+              "ViewState": "AQIAACEBAAAAAAAAAAAQwD8BAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-25T13:26:58.575Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FormNopBai.cs [Design]",
-              "DocumentMoniker": "D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormNopBai.cs",
+              "DocumentMoniker": "D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormNopBai.cs",
               "RelativeDocumentMoniker": "Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormNopBai.cs",
-              "ToolTip": "D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormNopBai.cs [Design]",
+              "ToolTip": "D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormNopBai.cs [Design]",
               "RelativeToolTip": "Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormNopBai.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T10:14:23.254Z",
@@ -63,11 +63,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "FormMonHoc.cs [Design]",
-              "DocumentMoniker": "D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormMonHoc.cs",
+              "DocumentMoniker": "D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormMonHoc.cs",
               "RelativeDocumentMoniker": "Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormMonHoc.cs",
-              "ToolTip": "D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormMonHoc.cs [Design]",
+              "ToolTip": "D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormMonHoc.cs [Design]",
               "RelativeToolTip": "Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormMonHoc.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T12:55:05.51Z",
@@ -75,11 +75,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "FormLamBai.cs [Design]",
-              "DocumentMoniker": "D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormLamBai.cs",
+              "DocumentMoniker": "D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormLamBai.cs",
               "RelativeDocumentMoniker": "Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormLamBai.cs",
-              "ToolTip": "D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormLamBai.cs [Design]",
+              "ToolTip": "D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormLamBai.cs [Design]",
               "RelativeToolTip": "Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormLamBai.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-22T10:14:14.595Z",
@@ -87,27 +87,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FormDe.cs [Design]",
-              "DocumentMoniker": "D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormDe.cs",
+              "DocumentMoniker": "D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormDe.cs",
               "RelativeDocumentMoniker": "Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormDe.cs",
               "ToolTip": "D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormDe.cs [Design]",
-              "RelativeToolTip": "Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormDe.cs [Design]",
+              "RelativeToolTip": "..\\..\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormDe.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T10:14:13.466Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-22T10:14:13.466Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FormChuong.cs [Design]",
-              "DocumentMoniker": "D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormChuong.cs",
+              "DocumentMoniker": "D:\\Bai Tap\\Ung_Dung_On_Tap_Ly_Thuyet\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormChuong.cs",
               "RelativeDocumentMoniker": "Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormChuong.cs",
               "ToolTip": "D:\\Bai Tap\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormChuong.cs [Design]",
-              "RelativeToolTip": "Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormChuong.cs [Design]",
+              "RelativeToolTip": "..\\..\\kiemTraTracNghiem\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\Ki\u1EC3m tra tr\u1EAFc nghi\u1EC7m\\FormChuong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T10:14:12.541Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-22T10:14:12.541Z"
             }
           ]
         }
