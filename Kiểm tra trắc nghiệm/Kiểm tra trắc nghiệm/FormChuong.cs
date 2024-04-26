@@ -113,7 +113,7 @@ namespace Kiểm_tra_trắc_nghiệm
         private void bttLamLaiCacCauSai_Click(object sender, EventArgs e)
         {
             int check = 0;
-            loadData.LoadDataFromExcelPath(dsCauHayLamSai, monHoc);
+            loadData.LoadDataCauHaySai(dsCauHayLamSai, monHoc);
             if (dsCauHayLamSai.Count <= 0)
             {
                 return;

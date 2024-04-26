@@ -87,6 +87,12 @@ namespace Kiểm_tra_trắc_nghiệm
                 if (worksheet == null)
                 {
                     worksheet = package.Workbook.Worksheets.Add("DsCauHoiLamSai");
+                    worksheet.Cells[1, 1].Value = "Câu Hỏi";
+                    worksheet.Cells[1, 2].Value = "Câu A";
+                    worksheet.Cells[1, 3].Value = "Câu B";
+                    worksheet.Cells[1, 4].Value = "Câu C";
+                    worksheet.Cells[1, 5].Value = "Câu D";
+                    worksheet.Cells[1, 6].Value = "Đáp án đúng";
                 }
 
                 // Xác định hàng bắt đầu ghi dữ liệu (nếu tệp đã có dữ liệu, tiếp tục từ hàng tiếp theo)

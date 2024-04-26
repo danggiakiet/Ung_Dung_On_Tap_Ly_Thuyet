@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -36,12 +37,65 @@ namespace Kiểm_tra_trắc_nghiệm
                 MessageBox.Show("Lỗi đường dẫn", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        public void LoadDataFromExcelPath(List<cauHoi> dsCauHayLamSai, string monHoc)
+        public void LoadDataCauHaySai(List<cauHoi> dsCauHayLamSai, string monHoc)
         {
+            ExcelPackage package = null; // Khởi tạo biến package
+
+            try
+            {
+                // Kiểm tra thư mục có tồn tại không
+                DirectoryInfo directory = new DirectoryInfo($"Câu hay làm sai/{monHoc}");
+                FileInfo fileInfo;
+
+                if (directory.Exists)
+                {
+                    // Kiểm tra nếu tệp Excel đã tồn tại
+                    fileInfo = new FileInfo($"Câu hay làm sai/{monHoc}/Danh sách câu hỏi hay làm sai.xlsx");
+
+                    if (!fileInfo.Exists)
+                    {
+                        // Tạo một tệp Excel mới nếu tệp không tồn tại
+                        package = new ExcelPackage();
+                    }
+                    else
+                    {
+                        package = new ExcelPackage(fileInfo); // Gán giá trị cho package nếu tệp đã tồn tại
+                    }
+                }
+                else
+                {
+                    // Tạo một folder bằng tên monhoc nếu folder chưa tồn tại
+                    directory.Create();
+                    // Tạo một tệp Excel trong folder đó
+                    fileInfo = new FileInfo($"Câu hay làm sai/{monHoc}/Danh sách câu hỏi hay làm sai.xlsx");
+                    package = new ExcelPackage(fileInfo); // Gán giá trị cho package
+                }
+
+                ExcelWorksheet worksheet = package.Workbook.Worksheets.FirstOrDefault(ws => ws.Name == "DsCauHoiLamSai");
+
+                if (worksheet == null)
+                {
+                    worksheet = package.Workbook.Worksheets.Add("DsCauHoiLamSai");
+                    worksheet.Cells[1, 1].Value = "Câu Hỏi";
+                    worksheet.Cells[1, 2].Value = "Câu A";
+                    worksheet.Cells[1, 3].Value = "Câu B";
+                    worksheet.Cells[1, 4].Value = "Câu C";
+                    worksheet.Cells[1, 5].Value = "Câu D";
+                    worksheet.Cells[1, 6].Value = "Đáp án đúng";
+                }
+
+                // Lưu tệp Excel vào đường dẫn đã chỉ định
+                package.SaveAs(fileInfo);
+            }
+            catch (Exception ex)
+            {
+                // Xử lý exception ở đây
+            }
+
             try
             {
                 // Mở file excel
-                using (var package = new ExcelPackage(new FileInfo($"Câu hay làm sai/{monHoc}/Danh sách câu hỏi hay làm sai.xlsx")))
+                using (package = new ExcelPackage(new FileInfo($"Câu hay làm sai/{monHoc}/Danh sách câu hỏi hay làm sai.xlsx")))
                 {
                     ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
                     // Kiểm tra xem có dữ liệu trong danh sách không
