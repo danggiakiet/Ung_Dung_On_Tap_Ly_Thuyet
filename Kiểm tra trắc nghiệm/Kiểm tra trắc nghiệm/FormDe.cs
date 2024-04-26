@@ -63,7 +63,7 @@ namespace Kiểm_tra_trắc_nghiệm
         {
             monHoc = MonHoc;
             chuong = Chuong;
-            InitializeComponent();
+            InitializeComponent(); 
         }
         public FormDe()
         {

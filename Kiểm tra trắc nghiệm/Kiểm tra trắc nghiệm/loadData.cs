@@ -59,7 +59,12 @@ namespace Kiểm_tra_trắc_nghiệm
                         string cauB = Convert.ToString(worksheet.Cells[i, 3].Value ?? "");
                         string cauC = Convert.ToString(worksheet.Cells[i, 4].Value ?? "");
                         string cauD = Convert.ToString(worksheet.Cells[i, 5].Value ?? "");
-                        int dapAnDung = Convert.ToInt32(worksheet.Cells[i, 6].Value ?? "");
+                        int dapAnDung = Convert.ToInt32(worksheet.Cells[i, 6].Value ?? 0);
+                        if (string.IsNullOrEmpty(cauHoi) || string.IsNullOrEmpty(cauA) || string.IsNullOrEmpty(cauB)
+                            || string.IsNullOrEmpty(cauC) || string.IsNullOrEmpty(cauD) || dapAnDung == 0)
+                        {
+                            continue;
+                        }
                         // Tạo biến cauHoi để thêm vào dsCauHoi
                         cauHoi cauHoii = new cauHoi(cauHoi, cauA, cauB, cauC, cauD, dapAnDung);
                         // Thêm biến vừa tạo vào dsNhanVien
@@ -76,7 +81,7 @@ namespace Kiểm_tra_trắc_nghiệm
         }
         public void LoadDataFromExcel(List<cauHoi> dsCauHoi, string monHoc, string chuong, bool exam)
         {
-            if (exam = false)
+            if (exam == false)
             {
                 // Làm mới danh sách
                 dsCauHoi.Clear();
@@ -97,12 +102,17 @@ namespace Kiểm_tra_trắc_nghiệm
                     for (int i = 2; i <= worksheet.Dimension.End.Row; i++)
                     {
                         // Khởi tạo các biến để chứa các giá trị lấy từ dữ liệu theo từng dòng
-                        string cauHoi = Convert.ToString(worksheet.Cells[i, 1].Value ?? "");
-                        string cauA = Convert.ToString(worksheet.Cells[i, 2].Value ?? "");
-                        string cauB = Convert.ToString(worksheet.Cells[i, 3].Value ?? "");
-                        string cauC = Convert.ToString(worksheet.Cells[i, 4].Value ?? "");
-                        string cauD = Convert.ToString(worksheet.Cells[i, 5].Value ?? "");
-                        int dapAnDung = Convert.ToInt32(worksheet.Cells[i, 6].Value ?? "");
+                        string cauHoi = Convert.ToString(worksheet.Cells[i, 1].Value);
+                        string cauA = Convert.ToString(worksheet.Cells[i, 2].Value);
+                        string cauB = Convert.ToString(worksheet.Cells[i, 3].Value);
+                        string cauC = Convert.ToString(worksheet.Cells[i, 4].Value);
+                        string cauD = Convert.ToString(worksheet.Cells[i, 5].Value);
+                        int dapAnDung = Convert.ToInt32(worksheet.Cells[i, 6].Value ?? 0);
+                        if (string.IsNullOrEmpty(cauHoi) || string.IsNullOrEmpty(cauA) || string.IsNullOrEmpty(cauB)
+                            || string.IsNullOrEmpty(cauC) || string.IsNullOrEmpty(cauD) || dapAnDung == 0)
+                        {
+                            continue;
+                        }
                         // Tạo biến cauHoi để thêm vào dsCauHoi
                         cauHoi cauHoii = new cauHoi(cauHoi, cauA, cauB, cauC, cauD, dapAnDung);
                         // Thêm biến vừa tạo vào dsNhanVien
