@@ -28,18 +28,18 @@ namespace Kiểm_tra_trắc_nghiệm
             labelChuong.Text = chuong;
             loadData.LoadDataFromExcel(dsCauHoi, monHoc, chuong, false);
             int soDe = dsCauHoi.Count / 20;
-            if(dsCauHoi.Count % 20 > 0)
+            if (dsCauHoi.Count % 20 > 0)
             {
                 soDe++;
-            }    
-            for(int i = 1; i <= soDe; i ++)
+            }
+            for (int i = 1; i <= soDe; i++)
             {
-                if(count >= 3)
+                if (count >= 3)
                 {
                     yBtt += 77;
                     xBtt = 82;
                     count = 0;
-                }    
+                }
                 string name = $"Đề {i}";
                 int de = i;
                 Button bttDe = CreateControls.CreateButton(xBtt, yBtt, 146, 44, name);
@@ -54,16 +54,13 @@ namespace Kiểm_tra_trắc_nghiệm
 
                 panelDe.Controls.Add(bttDe);
                 count++;
-
-
-
             }
         }
-        public FormDe(string MonHoc ,string Chuong)
+        public FormDe(string MonHoc, string Chuong)
         {
             monHoc = MonHoc;
             chuong = Chuong;
-            InitializeComponent(); 
+            InitializeComponent();
         }
         public FormDe()
         {
